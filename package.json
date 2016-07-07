@@ -12,5 +12,15 @@
   "engines": {
     "node": ">= 4.4.7",
     "npm": ">= 3.10.3"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepak/react-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deepak/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/deepak/react-boilerplate"
 }
