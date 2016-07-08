@@ -1,22 +1,11 @@
-class HelloWorld {
-  constructor() {
-    this.tag = 'h1'
-    this.text = 'Hello World';
+const React = require('react');
+
+module.exports = React.createClass({
+  render: function() {
+    return (
+      <h1 className="greeting">
+        {this.props.greeting}, {this.props.name}!
+      </h1>
+    );
   }
-
-  element() {
-    const element = document.createElement(this.tag);
-    element.innerHTML = this.text;
-
-    return element;
-  }
-
-  toString() {
-    return `(${this.text})`;
-  }
-}
-
-module.exports = function() {
-  const helloWorld = new HelloWorld();
-  return helloWorld.element();
-};
+});

@@ -1,10 +1,9 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-const PATHS = {
-  app: path.join(__dirname, 'app'),
-  build: path.join(__dirname, 'build')
-};
+const path = require('path'),
+      HtmlWebpackPlugin = require('html-webpack-plugin'),
+      PATHS = {
+        app: path.join(__dirname, 'app'),
+        build: path.join(__dirname, 'build')
+      };
 
 module.exports = {
   // Entry accepts a path or an object of entries.
@@ -29,7 +28,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React Boilerplate'
+      title: 'React Boilerplate',
+      inject: true,
+      template: path.join(PATHS.app, 'index.html')
     })
   ]
 };
