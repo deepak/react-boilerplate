@@ -17,6 +17,7 @@ module.exports = {
     path: PATHS.build,
     filename: '[name].js'
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       {
